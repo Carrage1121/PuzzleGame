@@ -1,0 +1,206 @@
+{
+    "FileVersion": "2.0.0",
+    "EnableAddressable": false,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "OutputNameStyle": 0,
+    "BuildPipeline": "ScriptableBuildPipeline",
+    "PackageName": "DefaultPackage",
+    "PackageVersion": "Simulate",
+    "AssetList": [
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.loader/Bundles/Code/ET.Hotfix.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.loader/Bundles/Code/ET.Hotfix.pdb.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.loader/Bundles/Code/ET.HotfixView.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.loader/Bundles/Code/ET.HotfixView.pdb.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.loader/Bundles/Code/ET.Model.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.loader/Bundles/Code/ET.Model.pdb.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.loader/Bundles/Code/ET.ModelView.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.loader/Bundles/Code/ET.ModelView.pdb.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.excel/Config/Bytes/c/AIConfigCategory.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.excel/Config/Bytes/c/UnitConfigCategory.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.demores/Scenes/Map1.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.demores/Scenes/Map2.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.statesync/Bundles/UI/UIHelp.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.statesync/Bundles/UI/UILobby.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.statesync/Bundles/UI/UILogin.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6
+        },
+        {
+            "Address": "",
+            "AssetPath": "Packages/cn.etetet.demores/Bundles/Unit/Unit.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "defaultpackage_packages_cn_etetet_loader_bundles_code.bundle",
+            "UnityCRC": 0,
+            "FileHash": "37226fd17e028dfd61e9e3ace0afa67b",
+            "FileCRC": "00000000",
+            "FileSize": 679896,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_packages_cn_etetet_excel_config_bytes_c.bundle",
+            "UnityCRC": 0,
+            "FileHash": "1acb508198de54ea092d9acc204b88e7",
+            "FileCRC": "00000000",
+            "FileSize": 659,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_packages_cn_etetet_demores_scenes_map1.bundle",
+            "UnityCRC": 0,
+            "FileHash": "4634410bce96e7797c6cc3cd21dc36f3",
+            "FileCRC": "00000000",
+            "FileSize": 216922,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_packages_cn_etetet_demores_scenes_map2.bundle",
+            "UnityCRC": 0,
+            "FileHash": "9a7162a8adcc69bedc0b7148aad6321c",
+            "FileCRC": "00000000",
+            "FileSize": 70649,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_packages_cn_etetet_statesync_bundles_ui_uihelp.bundle",
+            "UnityCRC": 0,
+            "FileHash": "8eb8301e608c5bba667321588daf6d1a",
+            "FileCRC": "00000000",
+            "FileSize": 5144,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_packages_cn_etetet_statesync_bundles_ui_uilobby.bundle",
+            "UnityCRC": 0,
+            "FileHash": "d3851d516f0dba2a7c19d30cff7263b7",
+            "FileCRC": "00000000",
+            "FileSize": 11376,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_packages_cn_etetet_statesync_bundles_ui_uilogin.bundle",
+            "UnityCRC": 0,
+            "FileHash": "14b749a2c82b776dd027d9c57ded5d13",
+            "FileCRC": "00000000",
+            "FileSize": 29774,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_packages_cn_etetet_demores_bundles_unit_unit.bundle",
+            "UnityCRC": 0,
+            "FileHash": "22ee8471bc3e52d478ba4c8a0fa22692",
+            "FileCRC": "00000000",
+            "FileSize": 1430,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        }
+    ]
+}
