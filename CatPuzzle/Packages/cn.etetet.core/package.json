@@ -1,0 +1,23 @@
+{
+  "name": "cn.etetet.core",
+  "displayName": "ET.Core",
+  "version": "2.0.8",
+  "description": "et框架核心, 实现了纤程，网络，entity等et基础功能",
+  "author": {
+    "name": "tanghai",
+    "url": "https://github.com/egametang/ET"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egametang/ET"
+  },
+  "relatedPackages": {},
+  "dependencies": {
+    "cn.etetet.sourcegenerator": "0.0.5",
+    "cn.etetet.memorypack": "1.10.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ET-Packages"
+  },
+  "_fingerprint": "259e161cada79010144c2f1eedc26f55796426f4"
+}
