@@ -66,6 +66,7 @@ namespace ET
             
             LogMsg.Instance.Debug(self.Fiber(), message);
             
+            //发送信息
             EventSystem.Instance.Invoke(self.IScene.SceneType, new NetComponentOnRead() {Session = session, Message = message});
         }
         

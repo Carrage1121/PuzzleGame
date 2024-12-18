@@ -11,6 +11,7 @@ namespace ET.Client
     /// </summary>
     [YIUI(EUICodeType.Panel, EPanelLayer.Panel)]
     [ComponentOf(typeof(YIUIChild))]
+    //进入界面
     public partial class LobbyPanelComponent : Entity, IDestroy, IAwake, IYIUIBind, IYIUIInitialize, IYIUIOpen
     {
         public const string PkgName = "Lobby";

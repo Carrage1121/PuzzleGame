@@ -45,6 +45,8 @@ namespace ET.Client
             main2NetClientLogin.Account = account;
             main2NetClientLogin.Password = password;
             main2NetClientLogin.Address = address;
+            //将消息传递到MessageQueue 目标是自己则直接分发事件到 EventSystem
+            //response 回应
             NetClient2Main_Login response = await self.Root().GetComponent<ProcessInnerSender>().Call(self.netClientActorId, main2NetClientLogin) as NetClient2Main_Login;
             
             return response.PlayerId;

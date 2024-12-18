@@ -40,6 +40,7 @@ namespace ET
                 return;
             }
 
+            //用MailBox组件进行事件分发
             ActorId actorId = messageInfo.ActorId;
             MessageObject message = messageInfo.MessageObject;
 
@@ -143,6 +144,8 @@ namespace ET
             }
             
             MessageSenderStruct messageSenderStruct = new(actorId, requestType, needException);
+            
+            //放入
             self.requestCallback.Add(rpcId, messageSenderStruct);
             
             async ETTask Timeout()
