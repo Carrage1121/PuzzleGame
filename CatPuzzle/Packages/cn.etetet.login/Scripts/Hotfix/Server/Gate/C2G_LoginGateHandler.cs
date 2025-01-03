@@ -39,7 +39,6 @@ namespace ET.Server
             {
                 throw new Exception("not write");
             }
-
             response.PlayerId = player.Id;
             await ETTask.CompletedTask;
         }
