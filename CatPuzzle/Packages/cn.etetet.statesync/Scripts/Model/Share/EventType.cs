@@ -24,6 +24,9 @@
     {
     }
 
+    public struct EnterMapStart
+    {
+    }
     public struct EnterMapFinish
     {
     }
