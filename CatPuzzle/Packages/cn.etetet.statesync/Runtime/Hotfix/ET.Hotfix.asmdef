@@ -3,6 +3,7 @@
     "rootNamespace": "ET",
     "references": [
         "ET.Core",
+        "ET.GamePlay",
         "ET.Loader",
         "ET.MemoryPack",
         "ET.Model",

@@ -1,0 +1,11 @@
+﻿{
+    "Id": 0,
+    "Name": "gameplay",
+    "ScriptsReferences": 
+    {
+        "Hotfix": ["ET.GamePlay"],
+        "HotfixView": ["ET.GamePlay"],
+        "Model": ["ET.GamePlay"],
+        "ModelView": ["ET.GamePlay"]
+    }
+}
