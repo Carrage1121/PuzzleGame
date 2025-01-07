@@ -1,6 +1,6 @@
 namespace ET.Client
 {
-    [Event(SceneType.Current)]
+    [Event(SceneType.All)]
     public class Test : AEvent<Scene , ClientSceneChangeEvent>
     {
         protected override async ETTask Run(Scene scene, ClientSceneChangeEvent a)
