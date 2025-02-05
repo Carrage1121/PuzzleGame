@@ -12,8 +12,9 @@ namespace ET.Client
                 //G2C_EnterMap g2CEnterMap = await root.GetComponent<ClientSenderComponent>().Call(C2G_EnterMap.Create()) as G2C_EnterMap;
                 // 等待场景切换完成
                 EventSystem.Instance.Publish(root,new ClientSceneChangeEvent());
-                await root.GetComponent<ObjectWait>().Wait<Wait_SceneChangeFinish>();
+                // await root.GetComponent<ObjectWait>().Wait<Wait_SceneChangeFinish>();
                 EventSystem.Instance.Publish(root, new EnterMapFinish());
+                await ETTask.CompletedTask;
             }
             catch (Exception e)
             {
