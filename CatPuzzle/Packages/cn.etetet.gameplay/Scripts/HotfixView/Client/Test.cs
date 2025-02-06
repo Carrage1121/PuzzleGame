@@ -6,7 +6,7 @@ namespace ET.Client
         protected override async ETTask Run(Scene scene, ClientSceneChangeEvent a)
         {
             UnityEngine.Debug.Log("is Test");
-            SceneChangeHelper.SceneChangeTo(scene, "Map1", 0).NoContext();
+            SceneChangeHelper.SceneChangeTo(scene, "Test", 0).NoContext();
             await ETTask.CompletedTask;
         }
     }
