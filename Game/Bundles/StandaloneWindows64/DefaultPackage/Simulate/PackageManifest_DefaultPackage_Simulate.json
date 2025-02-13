@@ -93,8 +93,8 @@
             "BundleID": 3
         },
         {
-            "Address": "Test",
-            "AssetPath": "Packages/cn.etetet.gameplay/Resources/Scenes/Test.unity",
+            "Address": "TestScene",
+            "AssetPath": "Packages/cn.etetet.gameplay/Resources/Scenes/TestScene.unity",
             "AssetGUID": "",
             "AssetTags": [],
             "BundleID": 4
@@ -358,7 +358,7 @@
             "UnityCRC": 0,
             "FileHash": "fff8900b6f008593dbb52a7d12546165",
             "FileCRC": "00000000",
-            "FileSize": 1067960,
+            "FileSize": 1068252,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []
@@ -394,9 +394,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "defaultpackage_packages_cn_etetet_gameplay_resources_scenes_test.bundle",
+            "BundleName": "defaultpackage_packages_cn_etetet_gameplay_resources_scenes_testscene.bundle",
             "UnityCRC": 0,
-            "FileHash": "add39954d2dc776b1407030a00c92b18",
+            "FileHash": "24e21b8de8e115bdb8c2000a0da3d658",
             "FileCRC": "00000000",
             "FileSize": 10042,
             "Encrypted": false,
@@ -418,7 +418,7 @@
             "UnityCRC": 0,
             "FileHash": "064334772dc9376990e2c82daa090b87",
             "FileCRC": "00000000",
-            "FileSize": 11376,
+            "FileSize": 11009,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []
@@ -428,7 +428,7 @@
             "UnityCRC": 0,
             "FileHash": "7aef9edee7714b7d522b22b1592a8ca8",
             "FileCRC": "00000000",
-            "FileSize": 29774,
+            "FileSize": 29147,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []
@@ -528,7 +528,7 @@
             "UnityCRC": 0,
             "FileHash": "9e865ae10b583c43bd34cc54f9014682",
             "FileCRC": "00000000",
-            "FileSize": 10832,
+            "FileSize": 10370,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []

@@ -18,7 +18,7 @@ namespace ET.Client
                 await resourcesLoaderComponent.LoadSceneAsync($"Packages/cn.etetet.gameplay/Resources/Scenes/{currentScene.Name}.unity", LoadSceneMode.Single);
                 // 切换到map场景
 
-                //await SceneManager.LoadSceneAsync(currentScene.Name);
+                // await SceneManager.LoadSceneAsync(currentScene.Name);
 
                 // currentScene.AddComponent<OperaComponent>();
             }

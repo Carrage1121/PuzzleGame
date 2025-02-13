@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ET.Client
+﻿namespace ET.Client
 {
     /// <summary>
     /// UI通用等待

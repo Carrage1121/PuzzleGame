@@ -337,14 +337,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Help:
-
-    1. Mouse Right Move
-
-    2. R Reload Dll
-
-    3. T Transfer
-    Map'
+  m_Text: 
 --- !u!1 &8916877364880150793
 GameObject:
   m_ObjectHideFlags: 0
