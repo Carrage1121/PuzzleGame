@@ -20,37 +20,38 @@ namespace ET.Client
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit, 1000, self.mapMask))
                 {
-                    C2M_PathfindingResult c2MPathfindingResult = C2M_PathfindingResult.Create();
-                    c2MPathfindingResult.Position = hit.point;
-                    self.Root().GetComponent<ClientSenderComponent>().Send(c2MPathfindingResult);
+                    // C2M_PathfindingResult c2MPathfindingResult = C2M_PathfindingResult.Create();
+                    // c2MPathfindingResult.Position = hit.point;
+                    // self.Root().GetComponent<ClientSenderComponent>().Send(c2MPathfindingResult);
+                    EventSystem.Instance.Publish(self.Scene() , new PlayerMoveEvent(){unit = self.GetParent<Unit>() , position = hit.point});
                 }
             }
             
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                CodeLoader.Instance.Reload();
-            }
-            
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                self.Test1().NoContext();
-            }
-                
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                self.Test2().NoContext();
-            }
-            
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                self.TestCancelAfter().WithContext(new ETCancellationToken());
-            }
-
-            if (Input.GetKeyDown(KeyCode.T))
-            {
-                C2M_TransferMap c2MTransferMap = C2M_TransferMap.Create();
-                self.Root().GetComponent<ClientSenderComponent>().Call(c2MTransferMap).NoContext();
-            }
+            // if (Input.GetKeyDown(KeyCode.R))
+            // {
+            //     CodeLoader.Instance.Reload();
+            // }
+            //
+            // if (Input.GetKeyDown(KeyCode.Q))
+            // {
+            //     self.Test1().NoContext();
+            // }
+            //     
+            // if (Input.GetKeyDown(KeyCode.W))
+            // {
+            //     self.Test2().NoContext();
+            // }
+            //
+            // if (Input.GetKeyDown(KeyCode.A))
+            // {
+            //     self.TestCancelAfter().WithContext(new ETCancellationToken());
+            // }
+            //
+            // if (Input.GetKeyDown(KeyCode.T))
+            // {
+            //     C2M_TransferMap c2MTransferMap = C2M_TransferMap.Create();
+            //     self.Root().GetComponent<ClientSenderComponent>().Call(c2MTransferMap).NoContext();
+            // }
         }
         
         private static async ETTask Test1(this OperaComponent self)

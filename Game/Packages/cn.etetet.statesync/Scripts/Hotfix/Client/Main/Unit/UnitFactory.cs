@@ -30,7 +30,9 @@ namespace ET.Client
 		   //      }
 
 	        unit.AddComponent<ObjectWait>();
-
+	        // unit.AddComponent<OperaComponent>();
+	        unit.AddComponent<PathfindingComponent, string>(currentScene.Name);
+	        
 	        // unit.AddComponent<XunLuoPathComponent>();
 	        
 	        EventSystem.Instance.Publish(unit.Scene(), new AfterUnitCreate() {Unit = unit});
