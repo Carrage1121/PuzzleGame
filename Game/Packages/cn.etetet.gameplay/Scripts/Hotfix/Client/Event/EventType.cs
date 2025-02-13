@@ -12,4 +12,8 @@ namespace ET.Client
         public Unit unit;
         public Unity.Mathematics.float3 position;
     }
+    
+    public struct RecastFileLoader
+    {
+    }
 }

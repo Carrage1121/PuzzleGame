@@ -14,6 +14,7 @@ namespace ET.Client
             root.AddComponent<ResourcesLoaderComponent>();
             root.AddComponent<PlayerComponent>();
             root.AddComponent<CurrentScenesComponent>();
+            root.AddComponent<UnitComponent>();
 
             var result = await root.AddComponent<YIUIMgrComponent>().Initialize();
             if (!result)

@@ -10,8 +10,11 @@ namespace ET
             root.AddComponent<TimerComponent>();
             root.AddComponent<CoroutineLockComponent>();
             root.AddComponent<ObjectWait>();
-            root.AddComponent<MailBoxComponent, int>(MailBoxType.UnOrderedMessage);
-            root.AddComponent<ProcessInnerSender>();
+            
+            World.Instance.AddSingleton<NavmeshComponent>();
+            
+            // root.AddComponent<MailBoxComponent, int>(MailBoxType.UnOrderedMessage);
+            // root.AddComponent<ProcessInnerSender>();
             
             MongoRegister.RegisterStruct<float2>();
             MongoRegister.RegisterStruct<float3>();

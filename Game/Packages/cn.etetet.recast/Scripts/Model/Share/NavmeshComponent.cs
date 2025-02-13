@@ -25,7 +25,7 @@ namespace ET
                     return bytes;
                 }
 
-                byte[] buffer =
+                byte[] buffer = 
                         EventSystem.Instance.Invoke<NavmeshComponent.RecastFileLoader, byte[]>(
                             new NavmeshComponent.RecastFileLoader() { Name = name });
                 if (buffer.Length == 0)

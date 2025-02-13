@@ -23,7 +23,7 @@ namespace ET.Client
                     // C2M_PathfindingResult c2MPathfindingResult = C2M_PathfindingResult.Create();
                     // c2MPathfindingResult.Position = hit.point;
                     // self.Root().GetComponent<ClientSenderComponent>().Send(c2MPathfindingResult);
-                    EventSystem.Instance.Publish(self.Scene() , new PlayerMoveEvent(){unit = self.GetParent<Unit>() , position = hit.point});
+                    EventSystem.Instance.Publish(self.Root() , new PlayerMoveEvent(){unit = UnitHelper.GetMyUnitFromClientScene(self.Root()) , position = hit.point});
                 }
             }
             
