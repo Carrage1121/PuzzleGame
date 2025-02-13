@@ -11,6 +11,7 @@ namespace ET.Client
             // unitComponent.Add(unit);
             Unit playerUnit = UnitFactory.Create(scene, UnitInfo.Create());
             // unitComponent.Add(playerUnit);
+            await ETTask.CompletedTask;
         }
     }
 }

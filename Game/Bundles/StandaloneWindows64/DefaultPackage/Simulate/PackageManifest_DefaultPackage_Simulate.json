@@ -358,7 +358,7 @@
             "UnityCRC": 0,
             "FileHash": "fff8900b6f008593dbb52a7d12546165",
             "FileCRC": "00000000",
-            "FileSize": 1068252,
+            "FileSize": 1068272,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []
@@ -398,7 +398,7 @@
             "UnityCRC": 0,
             "FileHash": "24e21b8de8e115bdb8c2000a0da3d658",
             "FileCRC": "00000000",
-            "FileSize": 10042,
+            "FileSize": 13260,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []
@@ -438,7 +438,7 @@
             "UnityCRC": 0,
             "FileHash": "d28e84587ce1ee0faf9bca5dd605a921",
             "FileCRC": "00000000",
-            "FileSize": 1480,
+            "FileSize": 1431,
             "Encrypted": false,
             "Tags": [],
             "DependIDs": []

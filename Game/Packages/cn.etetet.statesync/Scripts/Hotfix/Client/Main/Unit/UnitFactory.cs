@@ -1,6 +1,4 @@
-﻿using System;
-//using Unity.Mathematics;
-
+﻿
 namespace ET.Client
 {
     public static partial class UnitFactory
@@ -43,6 +41,7 @@ namespace ET.Client
         {
 	        // UnitComponent unitComponent = scene.GetComponent<UnitComponent>();
 	        UnitInfo unitInfo = UnitInfo.Create();
+	        Unit unit = null;
 	        switch (unitType)
 	        {
 		        case UnitType.Player:
@@ -56,17 +55,16 @@ namespace ET.Client
 			        // unit.AddComponent<MoveComponent>();
 			        // unit.Position = new float3(-10, 0, -10);
 
-			        Unit unit = UnitFactory.Create(scene, unitInfo);
+			        unit = UnitFactory.Create(scene, unitInfo);
 			        
 			        NumericComponent numericComponent = unit.AddComponent<NumericComponent>();
 			        // numericComponent.Set(NumericType.Speed, 6f); // 速度是6米每秒
 			        //numericComponent.Set(NumericType.AOI, 15000); // 视野15米
 			        // unitComponent.Add(unit);
-			        return unit;
+			        break;
 		        }
-		        default:
-			        throw new Exception($"not such unit type: {unitType}");
 	        }
+	        return unit;
         }
     }
 }
