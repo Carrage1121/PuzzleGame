@@ -8,7 +8,7 @@ namespace ET.Client
 	        UnitComponent unitComponent = currentScene.Root().GetComponent<UnitComponent>();
 	        Unit unit = unitComponent.AddChildWithId<Unit, int>(unitInfo.UnitId, unitInfo.ConfigId);
 	        unitComponent.Add(unit);
-	        
+	         
 	        unit.Position = unitInfo.Position;
 	        unit.Forward = unitInfo.Forward;
 	        
@@ -18,22 +18,9 @@ namespace ET.Client
 			// {
 			// 	numericComponent.Set(kv.Key, kv.Value);
 			// }
-	        
-	        unit.AddComponent<MoveComponent>();
-		   //      if (unitInfo.MoveInfo != null)
-		   //      {
-			  //       if (unitInfo.MoveInfo.Points.Count > 0)
-					// {
-					// 	unitInfo.MoveInfo.Points[0] = unit.Position;
-					// 	unit.MoveToAsync(unitInfo.MoveInfo.Points).NoContext();
-					// }
-		   //      }
-
+			
 	        unit.AddComponent<ObjectWait>();
 	        // unit.AddComponent<OperaComponent>();
-	        unit.AddComponent<PathfindingComponent, string>(currentScene.Name);
-	        
-	        // unit.AddComponent<XunLuoPathComponent>();
 	        
 	        EventSystem.Instance.Publish(unit.Scene(), new AfterUnitCreate() {Unit = unit});
             return unit;
@@ -50,19 +37,12 @@ namespace ET.Client
 		        {
 			        unitInfo.UnitId = id;
 			        unitInfo.ConfigId = 1001;
-			        // unitInfo.Position = new float3(-10, 0, -10);
+			        unitInfo.KV.Add(NumericType.Speed , 6);
 			        
-			        
-			        // Unit unit = unitComponent.AddChildWithId<Unit, int>(id, 1001);
-			        // unit.AddComponent<MoveComponent>();
-			        // unit.Position = new float3(-10, 0, -10);
-
 			        unit = UnitFactory.Create(scene, unitInfo);
-			        
-			        NumericComponent numericComponent = unit.AddComponent<NumericComponent>();
-			        // numericComponent.Set(NumericType.Speed, 6f); // 速度是6米每秒
-			        //numericComponent.Set(NumericType.AOI, 15000); // 视野15米
-			        // unitComponent.Add(unit);
+
+			        unit.AddComponent<MoveComponent>();
+			        unit.AddComponent<NumericComponent>();
 			        break;
 		        }
 	        }
