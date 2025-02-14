@@ -9,7 +9,7 @@ namespace ET.Client
             UnitComponent unitComponent = scene.GetComponent<UnitComponent>();
             // Unit unit = UnitFactory.Create(currentScene, m2CCreateMyUnit.Unit);
             // unitComponent.Add(unit);
-            Unit playerUnit = UnitFactory.Create(scene, 0, UnitType.Player);
+            Unit playerUnit = UnitFactory.Create(scene, 1001, UnitType.Player);
             // unitComponent.Add(playerUnit);
             await ETTask.CompletedTask;
         }
