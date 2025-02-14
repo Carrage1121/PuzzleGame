@@ -12,11 +12,11 @@ namespace ET.Client
 	        unit.Position = unitInfo.Position;
 	        unit.Forward = unitInfo.Forward;
 	        
-	        //NumericComponent numericComponent = unit.AddComponent<NumericComponent>();
-			// foreach (var kv in unitInfo.KV)
-			// {
-			// 	numericComponent.Set(kv.Key, kv.Value);
-			// }
+	        NumericComponent numericComponent = unit.AddComponent<NumericComponent>();
+			 foreach (var kv in unitInfo.KV)
+			 {
+			 	numericComponent.Set(kv.Key, kv.Value);
+			 }
 			
 	        unit.AddComponent<ObjectWait>();
 	        // unit.AddComponent<OperaComponent>();
@@ -25,7 +25,7 @@ namespace ET.Client
             return unit;
         }
         
-        public static Unit Create(Scene scene, long id, int unitType)
+        public static Unit Create(Scene scene, int configId, int unitType)
         {
 	        // UnitComponent unitComponent = scene.GetComponent<UnitComponent>();
 	        UnitInfo unitInfo = UnitInfo.Create();
@@ -34,9 +34,9 @@ namespace ET.Client
 	        {
 		        case UnitType.Player:
 		        {
-			        unitInfo.UnitId = id;
-			        unitInfo.ConfigId = 1001;
-			        unitInfo.KV.Add(NumericType.Speed , 6);
+			        unitInfo.UnitId = configId;
+			        unitInfo.ConfigId = UnitConfigCategory.Instance.Get(configId).Id;
+			        unitInfo.AddFloatToKV(NumericType.Speed , UnitConfigCategory.Instance.Get(configId).Speed);
 			        
 			        unit = UnitFactory.Create(scene, unitInfo);
 

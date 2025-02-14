@@ -20,8 +20,7 @@ namespace ET
             Id = _buf.ReadInt();
             Type = _buf.ReadInt();
             Name = _buf.ReadString();
-            Position = _buf.ReadInt();
-            Weight = _buf.ReadInt();
+            Speed = _buf.ReadFloat();
 
             EndInit();
         }
@@ -44,13 +43,9 @@ namespace ET
         /// </summary>
         public readonly string Name;
         /// <summary>
-        /// 位置
+        /// 速度
         /// </summary>
-        public readonly int Position;
-        /// <summary>
-        /// 体重
-        /// </summary>
-        public readonly int Weight;
+        public readonly float Speed;
     
         public const int __ID__ = -568528378;
         public override int GetTypeId() => __ID__;
@@ -66,8 +61,7 @@ namespace ET
             + "Id:" + Id + ","
             + "Type:" + Type + ","
             + "Name:" + Name + ","
-            + "Position:" + Position + ","
-            + "Weight:" + Weight + ","
+            + "Speed:" + Speed + ","
             + "}";
         }
 

@@ -228,6 +228,11 @@ namespace ET
         [MemoryPackOrder(6)]
         public MoveInfo MoveInfo { get; set; }
 
+        public void AddFloatToKV(int type , float value)
+        {
+            this.KV.Add(type , (long)(value * 10000));
+        }
+        
         public override void Dispose()
         {
             if (!this.IsFromPool)
