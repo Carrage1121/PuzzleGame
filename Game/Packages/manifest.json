@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "cn.etetet.ai": "3.0.0",
+    "cn.etetet.aoi": "3.0.0",
     "cn.etetet.console": "3.0.0",
     "cn.etetet.core": "3.0.3",
     "cn.etetet.excel": "3.0.0",

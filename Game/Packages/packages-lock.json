@@ -20,9 +20,7 @@
       "version": "file:cn.etetet.aoi",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.unit": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.console": {
       "version": "file:cn.etetet.console",
