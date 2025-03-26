@@ -1,24 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
 
 namespace YIUI.Luban.Editor
 {
-    public partial class LubanTools
+    public partial class LubanToolsWindow : EditorWindow
     {
-        public static Action CloseWindow;
+        public LubanTools LubanTools = new();
 
-        public static Action CloseWindowRefresh;
+        [MenuItem("ET/Luban 配置工具")]
+        public static void OpenWindow()
+        {
+            var window = GetWindow<LubanToolsWindow>("Luban 配置工具");
+            if (window != null)
+            {
+                window.Show();
+                LubanTools.CloseWindow        = CloseWindow;
+                LubanTools.CloseWindowRefresh = CloseWindowRefresh;
+            }
+        }
+
+        public static void CloseWindow()
+        {
+            GetWindow<LubanToolsWindow>()?.Close();
+        }
+
+        public static void CloseWindowRefresh()
+        {
+            CloseWindow();
+            AssetDatabase.SaveAssets();
+            if (!EditorApplication.ExecuteMenuItem("ET/Loader/ReGenerateProjectAssemblyReference"))
+            {
+                LubanTools.ReGenerateProjectAssemblyReference();
+            }
+
+            EditorApplication.ExecuteMenuItem("Assets/Refresh");
+        }
 
         private void OnGUI()
         {
-            if (!GenPackageExists())
+            if (!LubanTools.GenPackageExists())
             {
                 if (GUILayout.Button("创建 LubanGen包", GUILayout.Height(50)))
                 {
-                    InitGen();
+                    LubanTools.InitGen();
                 }
             }
             else
@@ -43,12 +69,12 @@ namespace YIUI.Luban.Editor
 
             if (GUILayout.Button("导出", GUILayout.ExpandWidth(true), GUILayout.Height(50)))
             {
-                LubanGen();
+                LubanTools.LubanGen();
             }
 
             if (GUILayout.Button("仅生成Conf", GUILayout.ExpandWidth(true), GUILayout.Height(30)))
             {
-                var result = CreateLubanConf();
+                var result = LubanTools.CreateLubanConf();
                 UnityTipsHelper.Show($"Luban生成Conf {(result ? "成功" : "失败")}");
             }
 
@@ -61,38 +87,38 @@ namespace YIUI.Luban.Editor
                 var folderPath = EditorUtility.OpenFolderPanel("选择 ET包", "", "");
                 if (!string.IsNullOrEmpty(folderPath))
                 {
-                    CreateToPackage(folderPath);
+                    LubanTools.CreateToPackage(folderPath);
                 }
             }
 
             GUILayout.Space(20);
 
-            if (DemoPackageExists())
+            if (LubanTools.DemoPackageExists())
             {
                 if (GUILayout.Button("删除 LubanDemo包", GUILayout.Height(50)))
                 {
-                    DeleteLubanDemoPackage();
+                    LubanTools.DeleteLubanDemoPackage();
                 }
             }
             else
             {
                 if (GUILayout.Button("创建 LubanDemo包", GUILayout.Height(50)))
                 {
-                    CreateLubanDemoPackage();
+                    LubanTools.CreateLubanDemoPackage();
                 }
             }
 
             if (GUILayout.Button("替换 ET.Excel To Luban", GUILayout.Height(30)))
             {
-                if (ReplaceAll(true))
+                if (LubanTools.ReplaceAll(true))
                 {
-                    CloseWindowRefresh?.Invoke();
+                    CloseWindowRefresh();
                 }
             }
 
             if (GUILayout.Button("同步覆盖 LoaderInvoker", GUILayout.Height(30)))
             {
-                SyncInvoke();
+                LubanTools.SyncInvoke();
             }
         }
     }

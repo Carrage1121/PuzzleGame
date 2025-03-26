@@ -9,12 +9,12 @@ namespace YIUI.Luban.Editor
         private static readonly string yiuilubandemoName        = "cn.etetet.yiuilubandemo";
         private static readonly string yiuilubandemoPackagePath = $"{Application.dataPath}/../Packages/{yiuilubandemoName}";
 
-        private bool DemoPackageExists()
+        public bool DemoPackageExists()
         {
             return Directory.Exists(yiuilubandemoPackagePath);
         }
 
-        private void CreateLubanDemoPackage()
+        public void CreateLubanDemoPackage()
         {
             var sourceFolder = $"{LubanTemplate}/{yiuilubandemoName}";
             var targetFolder = yiuilubandemoPackagePath;
@@ -22,19 +22,19 @@ namespace YIUI.Luban.Editor
             CreateNullDirectory($"{targetFolder}/Assets/Editor/Luban/Datas");
             CreateNullDirectory($"{targetFolder}/Assets/Editor/Luban/Base/Defines");
 
-            CloseWindowRefresh();
+            CloseWindowRefresh?.Invoke();
             UnityTipsHelper.Show("LubanDemo 创建完毕");
             UnityTipsHelper.SelectLubanFolder(yiuilubandemoName);
             RunLubanGen();
         }
 
-        private void DeleteLubanDemoPackage()
+        public void DeleteLubanDemoPackage()
         {
             if (DemoPackageExists())
             {
                 Directory.Delete(yiuilubandemoPackagePath, true);
                 UnityTipsHelper.Show("LubanDemo 删除完毕");
-                CloseWindowRefresh();
+                CloseWindowRefresh?.Invoke();
             }
         }
     }

@@ -9,7 +9,7 @@ namespace YIUI.Luban.Editor
 {
     public partial class LubanTools
     {
-        static bool ReplaceAll(bool tips = false)
+        public static bool ReplaceAll(bool tips = false)
         {
             if (ReplaceExcel() && ReplaceExcelInit() && ReplaceServerCommand())
             {
@@ -135,7 +135,7 @@ namespace YIUI.Luban.Editor
             return false;
         }
 
-        static bool SyncInvoke()
+        public static bool SyncInvoke()
         {
             var packagePath = $"{Application.dataPath}/../Packages";
             var sourcePath  = $"{packagePath}/cn.etetet.yiuiluban/.Template/cn.etetet.yiuilubangen/Scripts";
@@ -146,7 +146,7 @@ namespace YIUI.Luban.Editor
             if (CoverFile($"{sourcePath}{clientFile}", $"{targetPath}{clientFile}") &&
                 CoverFile($"{sourcePath}{serverFile}", $"{targetPath}{serverFile}"))
             {
-                CloseWindowRefresh();
+                CloseWindowRefresh?.Invoke();
                 return true;
             }
 

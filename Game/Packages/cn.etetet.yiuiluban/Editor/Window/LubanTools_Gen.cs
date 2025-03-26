@@ -16,6 +16,8 @@ namespace YIUI.Luban.Editor
         [MenuItem("ET/Excel/ExcelExporter")]
         public static void MenuLubanGen()
         {
+            ET.LubanEditorConfigCategory.ClearAll();
+
             if (!CreateLubanConf()) return;
 
             RunLubanGen();
@@ -23,6 +25,8 @@ namespace YIUI.Luban.Editor
 
         public static void LubanGen()
         {
+            ET.LubanEditorConfigCategory.ClearAll();
+
             if (!CreateLubanConf()) return;
 
             RunLubanGen(true);
@@ -34,7 +38,7 @@ namespace YIUI.Luban.Editor
             public string type     { get; set; }
         }
 
-        private static bool CreateLubanConf()
+        public static bool CreateLubanConf()
         {
             List<SchemaFile> AllSchemaFile = new();
             foreach (string directory in Directory.GetDirectories("Packages", "cn.etetet.*"))
@@ -231,7 +235,7 @@ namespace YIUI.Luban.Editor
                         Debug.LogError($"Luban导出错误:\n{error}");
                     }
 
-                    CloseWindow();
+                    CloseWindow?.Invoke();
                 }
                 else
                 {
@@ -244,7 +248,7 @@ namespace YIUI.Luban.Editor
                         Debug.Log("Luban导出完成");
                     }
 
-                    CloseWindowRefresh();
+                    CloseWindowRefresh?.Invoke();
                 }
             }
             catch (Exception e)

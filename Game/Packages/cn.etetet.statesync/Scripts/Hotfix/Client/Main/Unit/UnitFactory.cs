@@ -36,7 +36,7 @@ namespace ET.Client
 		        {
 			        unitInfo.UnitId = configId;
 			        unitInfo.ConfigId = UnitConfigCategory.Instance.Get(configId).Id;
-			        unitInfo.AddFloatToKV(NumericType.Speed , UnitConfigCategory.Instance.Get(configId).Speed);
+			        //unitInfo.AddFloatToKV(NumericType.Speed , UnitConfigCategory.Instance.Get(configId).Speed);
 			        
 			        unit = UnitFactory.Create(scene, unitInfo);
 

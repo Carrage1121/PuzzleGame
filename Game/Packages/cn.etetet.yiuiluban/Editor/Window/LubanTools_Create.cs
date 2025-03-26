@@ -6,7 +6,7 @@ namespace YIUI.Luban.Editor
 {
     public partial class LubanTools
     {
-        private void CreateToPackage(string folderPath)
+        public void CreateToPackage(string folderPath)
         {
             if (string.IsNullOrEmpty(folderPath)) return;
 
@@ -33,7 +33,7 @@ namespace YIUI.Luban.Editor
             CreateNullDirectory($"{targetPackagePath}/Datas");
             CreateNullDirectory($"{targetPackagePath}/Base/Defines");
 
-            CloseWindowRefresh();
+            CloseWindowRefresh?.Invoke();
             UnityTipsHelper.Show($"{createPackage} Luban创建完毕");
             UnityTipsHelper.SelectLubanFolder(createPackage);
         }

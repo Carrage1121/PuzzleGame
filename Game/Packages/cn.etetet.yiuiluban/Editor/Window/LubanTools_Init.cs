@@ -10,12 +10,12 @@ namespace YIUI.Luban.Editor
         private static readonly string yiuilubangenName        = "cn.etetet.yiuilubangen";
         private static readonly string yiuilubangenPackagePath = $"{PackagesPath}/{yiuilubangenName}";
 
-        private bool GenPackageExists()
+        public bool GenPackageExists()
         {
             return Directory.Exists(yiuilubangenPackagePath);
         }
 
-        private void InitGen()
+        public void InitGen()
         {
             if (!ReplaceAll()) return;
 
@@ -25,7 +25,7 @@ namespace YIUI.Luban.Editor
             CreateNullDirectory($"{targetFolder}/Assets/Editor/Luban/Datas");
             CreateNullDirectory($"{targetFolder}/Assets/Editor/Luban/Base/Defines");
 
-            CloseWindowRefresh();
+            CloseWindowRefresh?.Invoke();
             UnityTipsHelper.Show("LubanGen 创建完毕");
             UnityTipsHelper.SelectLubanFolder(yiuilubangenName);
             RunLubanGen();
