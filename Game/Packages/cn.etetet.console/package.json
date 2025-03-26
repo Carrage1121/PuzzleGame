@@ -1,7 +1,7 @@
 {
   "name": "cn.etetet.console",
   "displayName": "ET.Console",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "unity": "2022.3",
   "description": "实现了控制台解析分发",
   "author": {
@@ -13,11 +13,8 @@
     "url": "https://github.com/egametang/ET"
   },
   "relatedPackages": {},
-  "dependencies": {
-    "cn.etetet.core": "2.0.0"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
   },
-  "_fingerprint": "36202a02e496fa8232971f79c0f6e3a227a8f742"
+  "_fingerprint": "bdffee429acad5380f877822992b8e51a40b670f"
 }

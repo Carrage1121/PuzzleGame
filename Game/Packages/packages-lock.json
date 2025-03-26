@@ -28,9 +28,7 @@
       "version": "file:cn.etetet.console",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.core": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.core": {
       "version": "file:cn.etetet.core",
@@ -221,17 +219,13 @@
       "version": "file:cn.etetet.unit",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.core": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.watcher": {
       "version": "file:cn.etetet.watcher",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.core": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.yiui": {
       "version": "file:cn.etetet.yiui",
