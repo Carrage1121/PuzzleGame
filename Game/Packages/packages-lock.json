@@ -99,27 +99,19 @@
       "version": "file:cn.etetet.move",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.unit": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.netinner": {
       "version": "file:cn.etetet.netinner",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.excel": "2.0.0",
-        "cn.etetet.proto": "2.0.1",
-        "cn.etetet.sourcegenerator": "0.0.5"
-      }
+      "dependencies": {}
     },
     "cn.etetet.numeric": {
       "version": "file:cn.etetet.numeric",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.unit": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.packagemanager": {
       "version": "file:cn.etetet.packagemanager",
@@ -143,9 +135,7 @@
       "version": "file:cn.etetet.referencecollector",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.core": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.router": {
       "version": "file:cn.etetet.router",

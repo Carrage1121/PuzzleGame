@@ -1,7 +1,7 @@
 {
   "name": "cn.etetet.numeric",
   "displayName": "ET.Numeric",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "unity": "2022.3",
   "description": "一个数值组件，提供了kv的实现",
   "author": {
@@ -13,11 +13,8 @@
     "url": "https://github.com/egametang/ET"
   },
   "relatedPackages": {},
-  "dependencies": {
-    "cn.etetet.unit": "2.0.0"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
   },
-  "_fingerprint": "94f1856408fe06ff2af0d1726cab54828aa7be87"
+  "_fingerprint": "31b6aad0def44c07b1ea70c34d42c73e1f05d977"
 }
