@@ -26,27 +26,17 @@ namespace ET
                     .WithNotParsed(error => throw new Exception($"命令行格式错误! {error}"))
                     .WithParsed((o)=>World.Instance.AddSingleton(o));
 
-            //获取globalConfig
             GlobalConfig globalConfig = Resources.Load<GlobalConfig>("GlobalConfig");
-            //绑定场景名
             Options.Instance.SceneName = globalConfig.SceneName;
 			
-            //输出
             World.Instance.AddSingleton<Logger>().Log = new UnityLogger();
             ETTask.ExceptionHandler += Log.Error;
 			
-            //时间
             World.Instance.AddSingleton<TimeInfo>();
-            
-            //todo
-            //纤程？
             World.Instance.AddSingleton<FiberManager>();
 
-            //todo
-            //创建默认包
             await World.Instance.AddSingleton<ResourcesComponent>().CreatePackageAsync("DefaultPackage", true);
             
-            //CodeLoad开启游戏
             World.Instance.AddSingleton<CodeLoader>().Start().NoContext();
         }
 

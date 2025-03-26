@@ -37,8 +37,6 @@ namespace ET
             
             if (!Define.IsEditor)
             {
-                //todo
-                //热重载？
                 byte[] modelAssBytes = this.dlls["ET.Model.dll"].bytes;
                 byte[] modelPdbBytes = this.dlls["ET.Model.pdb"].bytes;
                 byte[] modelViewAssBytes = this.dlls["ET.ModelView.dll"].bytes;
@@ -72,16 +70,12 @@ namespace ET
             
             (Assembly hotfixAssembly, Assembly hotfixViewAssembly) = this.LoadHotfix();
 
-            //todo
-            //Assembly 程序集
             World.Instance.AddSingleton<CodeTypes, Assembly[]>(new[]
             {
                 typeof (World).Assembly, typeof (Init).Assembly, this.modelAssembly, this.modelViewAssembly, hotfixAssembly,
                 hotfixViewAssembly
             });
 
-            //查找静态类的静态函数
-            //IStaticMethod
             IStaticMethod start = new StaticMethod(this.modelAssembly, "ET.Entry", "Start");
             start.Run();
         }

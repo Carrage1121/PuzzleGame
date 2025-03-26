@@ -1,6 +1,6 @@
 {
   "name": "cn.etetet.hybridclr",
-  "version": "6.7.1",
+  "version": "7.8.1",
   "displayName": "ET.HybridCLR",
   "description": "HybridCLR is a fully featured, zero-cost, high-performance, low-memory solution for Unity's all-platform native c# hotupdate.",
   "category": "Runtime",
@@ -22,5 +22,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
   },
-  "_fingerprint": "595a1380f84b8368f15bb3b3aa8d56873cbffe05"
+  "_fingerprint": "c50f77040d6dc166a69bbb1c1c795210564c47bf"
 }
