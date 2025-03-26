@@ -4,17 +4,21 @@
 // Data: 2023年2月12日
 //------------------------------------------------------------
 
+using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
-
 namespace YIUIFramework
 {
     //[DetailedInfoBox("UI 组件表 点击展开详细介绍", @"李胜扬")]
-    [LabelText("UI 组件表")]
-    [AddComponentMenu("YIUIBind/★★★UI Component Table 组件表★★★")]
+    //[AddComponentMenu("YIUIBind/★★★YIUI Component Table 组件表★★★")]
+    [HideLabel]
+    [Serializable]
+    [HideMonoScript]
+    [DisallowMultipleComponent]
+    [AddComponentMenu("")]
     public sealed partial class UIBindComponentTable : SerializedMonoBehaviour
     {
         [OdinSerialize]

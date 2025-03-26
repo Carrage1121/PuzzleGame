@@ -4,6 +4,7 @@
 // Data: 2023年2月12日
 //------------------------------------------------------------
 
+using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -12,8 +13,12 @@ using UnityEngine;
 namespace YIUIFramework
 {
     //[DetailedInfoBox("UI 事件表 点击展开详细介绍", @"李胜扬")]
-    [LabelText("UI 事件表")]
-    [AddComponentMenu("YIUIBind/★★★UI Event Table 事件表★★★")]
+    //[AddComponentMenu("YIUIBind/★★★YIUI Event Table 事件表★★★")]
+    [HideLabel]
+    [Serializable]
+    [HideMonoScript]
+    [DisallowMultipleComponent]
+    [AddComponentMenu("")]
     public sealed partial class UIBindEventTable : SerializedMonoBehaviour
     {
         [OdinSerialize]
@@ -21,7 +26,7 @@ namespace YIUIFramework
         [LabelText("所有事件")]
         [Searchable]
         [DictionaryDrawerSettings(KeyLabel = "事件名称", ValueLabel = "事件内容", IsReadOnly = true,
-                                  DisplayMode = DictionaryDisplayOptions.ExpandedFoldout)]
+            DisplayMode = DictionaryDisplayOptions.ExpandedFoldout)]
         [Delayed]
         private Dictionary<string, UIEventBase> m_EventDic = new Dictionary<string, UIEventBase>();
 

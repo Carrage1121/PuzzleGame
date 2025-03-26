@@ -61,7 +61,6 @@ namespace ET
             this.fibers = null;
         }
 
-        //在指定线程类型里面添加纤程？
         public async ETTask<int> Create(SchedulerType schedulerType, int fiberId, int zone, int sceneType, string name)
         {
             if (sceneType == 0)

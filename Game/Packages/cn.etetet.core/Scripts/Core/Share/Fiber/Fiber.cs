@@ -51,8 +51,6 @@ namespace ET
 
         private readonly Queue<ETTask> frameFinishTasks = new();
         
-        //internal 内部类
-        //构造函数 生成Fiber时传入Fiber id sceneType name生成Scene
         internal Fiber(int id, int zone, int sceneType, string name)
         {
             this.Id = id;

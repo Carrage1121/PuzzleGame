@@ -13,9 +13,12 @@ using UnityEngine;
 namespace YIUIFramework
 {
     //[DetailedInfoBox("UI 数据表 点击展开详细介绍", @"李胜扬")]
-    [LabelText("UI 数据表")]
+    //[AddComponentMenu("YIUIBind/★★★YIUI Data Table 数据表★★★")]
+    [HideLabel]
     [Serializable]
-    [AddComponentMenu("YIUIBind/★★★UI Data Table 数据表★★★")]
+    [HideMonoScript]
+    [DisallowMultipleComponent]
+    [AddComponentMenu("")]
     public sealed partial class UIBindDataTable : SerializedMonoBehaviour
     {
         [OdinSerialize]
@@ -23,7 +26,7 @@ namespace YIUIFramework
         [ShowInInspector]
         [Title("所有数据", TitleAlignment = TitleAlignments.Centered)]
         [DictionaryDrawerSettings(KeyLabel = "数据名称", ValueLabel = "数据内容", IsReadOnly = true,
-                                  DisplayMode = DictionaryDisplayOptions.ExpandedFoldout)]
+            DisplayMode = DictionaryDisplayOptions.ExpandedFoldout)]
         private Dictionary<string, UIData> m_DataDic = new Dictionary<string, UIData>();
 
         public IReadOnlyDictionary<string, UIData> DataDic => m_DataDic;
