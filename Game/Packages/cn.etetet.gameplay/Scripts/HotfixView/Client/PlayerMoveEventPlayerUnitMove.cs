@@ -11,7 +11,7 @@ namespace ET.Client
             Unit unit = args.unit;
             float3 target = args.position;
             List<float3> points = new List<float3>();
-            unit.GetComponent<PathfindingComponent>().Find(unit.Position, target, points);
+            // unit.GetComponent<PathfindingComponent>().Find(unit.Position, target, points);
             MoveComponent moveComponent = unit.GetComponent<MoveComponent>();
             moveComponent.MoveToAsync(points, unit.GetComponent<NumericComponent>().GetAsFloat(NumericType.Speed)).NoContext();
             await ETTask.CompletedTask;

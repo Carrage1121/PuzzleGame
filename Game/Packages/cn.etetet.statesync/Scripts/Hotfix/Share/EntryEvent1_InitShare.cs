@@ -11,7 +11,7 @@ namespace ET
             root.AddComponent<CoroutineLockComponent>();
             root.AddComponent<ObjectWait>();
             
-            World.Instance.AddSingleton<NavmeshComponent>();
+            // World.Instance.AddSingleton<NavmeshComponent>();
             
             // root.AddComponent<MailBoxComponent, int>(MailBoxType.UnOrderedMessage);
             // root.AddComponent<ProcessInnerSender>();
