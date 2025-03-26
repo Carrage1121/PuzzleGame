@@ -4,11 +4,7 @@
       "version": "file:cn.etetet.actorlocation",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.core": "2.0.0",
-        "cn.etetet.netinner": "2.0.1",
-        "cn.etetet.startconfig": "2.0.1"
-      }
+      "dependencies": {}
     },
     "cn.etetet.ai": {
       "version": "file:cn.etetet.ai",
