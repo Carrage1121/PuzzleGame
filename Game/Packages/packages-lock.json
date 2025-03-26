@@ -211,9 +211,7 @@
       "version": "file:cn.etetet.ui",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.core": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.unit": {
       "version": "file:cn.etetet.unit",
