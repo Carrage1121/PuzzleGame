@@ -1,7 +1,7 @@
 {
   "name": "cn.etetet.http",
   "displayName": "ET.Http",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "unity": "2022.3",
   "description": "简单的http库",
   "author": {
@@ -13,11 +13,8 @@
     "url": "https://github.com/egametang/ET"
   },
   "relatedPackages": {},
-  "dependencies": {
-    "cn.etetet.core": "2.0.0"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
   },
-  "_fingerprint": "1544f5557834efe1e4714ce972d3fcc62f7015f1"
+  "_fingerprint": "176bb8583a35ddfdb8c4cfa7371a5b5906c4bb81"
 }

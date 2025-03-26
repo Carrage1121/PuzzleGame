@@ -58,9 +58,7 @@
       "version": "file:cn.etetet.http",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.core": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.hybridclr": {
       "version": "file:cn.etetet.hybridclr",
@@ -135,9 +133,7 @@
       "version": "file:cn.etetet.proto",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.core": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.recast": {
       "version": "file:cn.etetet.recast",
@@ -157,10 +153,7 @@
       "version": "file:cn.etetet.router",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.http": "2.0.0",
-        "cn.etetet.startconfig": "2.0.1"
-      }
+      "dependencies": {}
     },
     "cn.etetet.sourcegenerator": {
       "version": "file:cn.etetet.sourcegenerator",
