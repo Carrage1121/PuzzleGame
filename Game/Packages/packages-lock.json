@@ -172,9 +172,7 @@
       "version": "file:cn.etetet.startconfig",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.excel": "2.0.0"
-      }
+      "dependencies": {}
     },
     "cn.etetet.statesync": {
       "version": "file:cn.etetet.statesync",
