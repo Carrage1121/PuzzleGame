@@ -77,9 +77,7 @@
       "version": "file:cn.etetet.login",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "cn.etetet.router": "2.0.1"
-      }
+      "dependencies": {}
     },
     "cn.etetet.mathematics": {
       "version": "file:cn.etetet.mathematics",
