@@ -18,7 +18,7 @@ MonoBehaviour:
   - Name: com.etetet.init
     Version: 
   - Name: cn.etetet.yooassets
-    Version: 2.1.5
+    Version: 2.3.6
   - Name: cn.etetet.yiuilubangen
     Version: 
   - Name: cn.etetet.yiuiinvoke
@@ -29,74 +29,66 @@ MonoBehaviour:
     Version: 1.0.2
   - Name: cn.etetet.mathematics
     Version: 0.0.2
-  - Name: cn.etetet.loader
-    Version: 3.0.1
-  - Name: cn.etetet.hybridclr
-    Version: 7.8.1
   - Name: cn.etetet.gameplay
     Version: 
-  - Name: cn.etetet.demores
-    Version: 3.0.0
-  - Name: cn.etetet.actorlocation
-    Version: 3.0.0
   - Name: com.unity.modules.wind
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.video
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.vehicles
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.unitywebrequestwww
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.unitywebrequesttexture
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.unitywebrequestaudio
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.unitywebrequestassetbundle
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.unitywebrequest
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.unityanalytics
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.umbra
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.uielements
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.ui
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.tilemap
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.terrainphysics
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.terrain
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.screencapture
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.physics2d
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.physics
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.particlesystem
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.imgui
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.imageconversion
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.director
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.cloth
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.audio
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.assetbundle
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.animation
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.androidjni
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.ai
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.modules.accessibility
-    Version: 
+    Version: 1.0.0
   - Name: com.unity.ugui
     Version: 3.0.0-exp.4
   - Name: com.unity.timeline
@@ -108,13 +100,13 @@ MonoBehaviour:
   - Name: com.unity.ide.vscode
     Version: 1.2.5
   - Name: com.unity.ide.visualstudio
-    Version: 2.0.22
+    Version: 2.0.23
   - Name: com.unity.ide.rider
     Version: 3.0.35
   - Name: com.unity.ai.navigation
     Version: 2.0.6
   - Name: com.unity.2d.sprite
-    Version: 
+    Version: 1.0.0
   - Name: cn.etetet.yiuiyooassets
     Version: 1.1.0
   - Name: cn.etetet.yiuitips
@@ -144,7 +136,7 @@ MonoBehaviour:
   - Name: cn.etetet.ui
     Version: 3.0.0
   - Name: cn.etetet.statesync
-    Version: 3.0.10
+    Version: 3.0.11
   - Name: cn.etetet.startconfig
     Version: 3.0.0
   - Name: cn.etetet.sourcegenerator
@@ -167,9 +159,15 @@ MonoBehaviour:
     Version: 1.10.1
   - Name: cn.etetet.login
     Version: 3.0.0
+  - Name: cn.etetet.loader
+    Version: 3.0.1
+  - Name: cn.etetet.hybridclr
+    Version: 7.8.1
   - Name: cn.etetet.http
     Version: 3.0.0
   - Name: cn.etetet.excel
+    Version: 3.0.0
+  - Name: cn.etetet.demores
     Version: 3.0.0
   - Name: cn.etetet.core
     Version: 3.0.3
@@ -179,6 +177,8 @@ MonoBehaviour:
     Version: 3.0.0
   - Name: cn.etetet.ai
     Version: 3.0.0
+  - Name: cn.etetet.actorlocation
+    Version: 3.0.0
   BanPackageInfo: []
-  LastUpdateTime: 1743004975
+  LastUpdateTime: 1743226700
   UpdateInterval: 3600
